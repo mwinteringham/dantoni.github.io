@@ -12,17 +12,60 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
         <script type = 'text/javascript'>
             $(document).ready(function() {
                 $('#fullpage').fullpage({
                     navigation: true,
-                    sectionsColor: ['#ffffff', '#c69c6d', '#ffffff', '#c69c6d', '#ffffff']
+                    sectionsColor: ['#ffffff', '#C59C6D', '#ffffff', '#C59C6D', '#ffffff','#C59C6D', '#ffffff','#C59C6D', '#ffffff']
                 });
             });
         </script>
+        <!-- #B2C571 -->
+        <!-- #E5CA49 -->
         <style>
+            @font-face {
+                font-family: 'jenna_sue_proregular';
+                src: url('./fonts/jenna_sue_pro-webfont.woff2') format('woff2'),
+                    url('./fonts/jenna_sue_pro-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
             .alternate {
                 color : white;
+            }
+
+            img {
+                width: 100%;
+                padding: 10px;
+                margin-top: 6rem;
+            }
+
+            h1, h2 {
+                font-family: 'jenna_sue_proregular', sans-serif;
+                text-align: center;
+                font-size: 10.0rem;
+            }
+
+            h3 {
+                font-family: 'jenna_sue_proregular', sans-serif;
+                font-size: 6.0rem;
+            }
+
+            h4 {
+                font-family: 'jenna_sue_proregular', sans-serif;
+                font-size: 4.0rem;
+            }
+
+            p, li{
+                font-family: 'EB Garamond', serif;
+                font-size: 2.0rem;
+            }
+
+            .address{
+                list-style: none;
+                padding: 0;
             }
         </style>
     </head>
