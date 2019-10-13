@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/fullpage.css" />
+        <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="js/fullpage.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
         <script type = 'text/javascript'>
             $(document).ready(function() {
@@ -19,6 +18,10 @@
                     scrollOverflow: true,
                     sectionsColor: ['#ffffff', '#C59C6D', '#ffffff', '#C59C6D', '#ffffff','#C59C6D', '#ffffff','#C59C6D', '#ffffff']
                 });
+
+                $("#overlay").hide();
+
+                $(".title").fadeIn(2000);
             });
         </script>
         <!-- #B2C571 -->
@@ -30,6 +33,28 @@
                     url('./fonts/jenna_sue_pro-webfont.woff') format('woff');
                 font-weight: normal;
                 font-style: normal;
+            }
+
+            #overlay {
+                position: fixed; /* Sit on top of the page content */
+                width: 100%; /* Full width (cover the whole page) */
+                height: 100%; /* Full height (cover the whole page) */
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: white;
+                z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+                cursor: pointer; /* Add a pointer on hover */
+            }
+
+            #home {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)), url('images/bg-2.png');
+                background-size: 100%;
+            }
+
+            .title {
+                display: none;
             }
 
             .alternate {
@@ -63,6 +88,7 @@
                 font-family: 'jenna_sue_proregular', sans-serif;
                 text-align: center;
                 font-size: 9.0rem;
+                z-index: 10;
             }
 
             h3 {
