@@ -51,13 +51,20 @@
 
             @media only screen and (min-width: 768px) {
                 #home {
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)), url('images/bg-2.jpg');
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('images/bg-2.jpg');
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-position: 50% 45%; 
                 }
             }
 
+            @media only screen and (max-width: 768px) {
+                #home {
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('images/bg-1.jpg');
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%; 
+                }
+            }
 
             .title {
                 display: none;
@@ -70,6 +77,11 @@
             img {
                 width: 100%;
                 padding: 10px;
+            }
+
+            .arrow {
+                padding: 0px;
+                width: 6%;
             }
 
             .church {
@@ -90,10 +102,17 @@
                 filter: alpha(opacity=80); /* For IE8 and earlier */
             }
 
-            h1, h2 {
+            h1 {
                 font-family: 'jenna_sue_proregular', sans-serif;
                 text-align: center;
                 font-size: 9.0rem;
+                z-index: 10;
+            }
+
+            h2 {
+                font-family: 'jenna_sue_proregular', sans-serif;
+                text-align: center;
+                font-size: 8.0rem;
                 z-index: 10;
             }
 
@@ -107,9 +126,9 @@
                 font-size: 4.0rem;
             }
 
-            p, li{
+            p, li, a{
                 font-family: 'EB Garamond', serif;
-                font-size: 2.0rem;
+                font-size: 1.8rem;
             }
 
             .address{
@@ -121,8 +140,21 @@
                 font-weight: bold;
             }
 
-            p, li {
-                font-size: 1.8rem;
+            .logo {
+                width: 20.0rem;
+                margin: auto;
+                padding: 0;
+            }
+
+            .rsvp {
+                text-align: center;
+            }
+
+            .rsvp a {
+                font-size: 3.0rem;
+                background: white;
+                padding: 10px;
+                border-radius: 10px;
             }
         </style>
     </head>
